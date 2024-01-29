@@ -28,7 +28,7 @@
         font-size: 16px;
       }
       .card {
-        width: 300px;
+        width: 350px;
         background: var(--white);
         position: absolute;
         padding: 15px;
@@ -61,7 +61,7 @@
         font-size: 1rem;
         font-weight: 600;
       }
-      p {
+      .para {
         color: var(--grey);
       }
       .writter {
@@ -74,7 +74,6 @@
         margin-right: 10px;
       }
       .writter p {
-        color: black;
         font-weight: 800;
       }
       .attribution {
@@ -85,6 +84,11 @@
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
+      }
+      @media screen and (max-width: 423px) {
+        .card {
+          width: 300px;
+        }
       }
     </style>
   </head>
@@ -98,7 +102,7 @@
       <span role="category">Learning</span>
       <h3 role="date">Published 21 Dec 2023</h3>
       <h2 role="title">HTML & CSS foundations</h2>
-      <p role="description">
+      <p class="para" role="description">
         These languages are the backbone of every website, defining structure,
         content, and presentation.
       </p>

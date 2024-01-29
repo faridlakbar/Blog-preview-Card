@@ -55,6 +55,7 @@
       h3 {
         font-weight: normal;
         font-size: 1rem;
+        font-weight: 500;
       }
       p {
         color: var(--grey);
@@ -70,6 +71,7 @@
       }
       .writter p {
         color: black;
+        font-weight: bold;
       }
       .attribution {
         position: absolute;
@@ -83,21 +85,21 @@
     </style>
   </head>
   <body>
-    <div class="card">
+    <div class="card" role="card">
       <img
         class="illustration"
         src="./assets/images/illustration-article.svg"
         alt="illustration-article"
       />
-      <span>Learning</span>
-      <h3>Published 21 Dec 2023</h3>
-      <h2>HTML & CSS foundations</h2>
-      <p>
+      <span role="category">Learning</span>
+      <h3 role="date">Published 21 Dec 2023</h3>
+      <h2 role="title">HTML & CSS foundations</h2>
+      <p role="description">
         These languages are the backbone of every website, defining structure,
         content, and presentation.
       </p>
-      <div class="writter">
-        <img src="/assets/images/image-avatar.webp" alt="" />
+      <div class="writter" role="writter">
+        <img src="/assets/images/image-avatar.webp" alt="avatar" />
         <p>Greg Hooper</p>
       </div>
     </div>
